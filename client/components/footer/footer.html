@@ -1,0 +1,32 @@
+<footer class="FooterContainer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 formFooter">
+          <form ng-submit="vm.sube()">
+            <h4 class="TitleFormFooter"> ¿Quieres recibir todas las novedades?</h4>
+            <div class="form-group has-feedback" ng-class="vm.validarColor">
+              <div ng-bind-html="vm.el"></div>
+              <input type="email" class="form-control" id="inputSuccess2" placeholder="tu@correo.com" aria-describedby="inputSuccess2Status">
+              <small class="text-muted">no compartiremos tu informacion con nadie mas </small>
+              <span ng-class="vm.validarColorDiv" aria-hidden = "true"></span>
+              <span id="inputSuccess2Status" class="sr-only">(success)</span>
+            </div>
+            <button type="submit" class="btn btn-primary ">Suscríbeme </button>
+          </form>
+        </div>
+        <div class="col-md-3 col-md-offset-5 navContainer">
+          <h4>Navegacion</h4>
+          <nav>
+            <ul class="nav">
+              <li><a ui-sref="main" class="navbar-link">Home</a></li>
+              <li><a  ui-sref="catalogo" class="navbar-link">Cataloge</a></li>
+              <li><a href="#" class="navbar-link">Car</a></li>
+              <li><a href="#" class="navbar-link">FAQ</a></li>
+              <li><a href="#" class="navbar-link">Contacto</a></li>
+              <li><a href="#" class="navbar-link">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+</footer>

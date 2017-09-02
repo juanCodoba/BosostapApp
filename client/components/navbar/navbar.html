@@ -1,0 +1,66 @@
+<!--header-->
+<header class="Header-container">
+  <div class="container">
+    <div class="row Header-containerAlignv">
+        <div class="col-xs-6 ">
+          <h1>AdsiShop</h1>
+        </div>
+        <div class="col-xs-6   text-right">
+          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu" >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a href="#" class="Login hidden-xs">Login</a>
+        </div>
+    </div>
+  </div>
+</header>
+<!--Header-->
+
+<!--menu-->
+<div class="MenuContainer">
+  <nav class=" collapse navbar navbar-collapse navbar-margin" id="navMenu">
+    <div class="container" >
+      <div class="row NavbarMargin-container">
+        <div class="col-xs-10 col-md-4  col-xs-offset-0  col-md-offset-0 nabvar default ">
+          <ul class="nav navbar-nav">
+            <li ng-click="vm.ocultarCollapse()"><a  ui-sref="catalogo" ui-sref-active="active" class="navbar-link" >catalogo</a></li>
+            <li ng-click="vm.ocultarCollapse()"><a  ui-sref="main" ui-sref-active="active" class="navbar-link" >home</a></li>
+            <li ng-click="vm.ocultarCollapse()"><a  ui-sref="" class="navbar-link" >carrito</a></li>
+            <li ng-click="vm.ocultarCollapse()"><a  ui-sref="" class=" navbar-link Login visible-xs">Login</a></li>
+          </ul>
+        </div >
+        <div class="col-xs-10  col-md-6 col-md-offset-2">
+          <form class="AlignItems-form hidden-xs" >
+            <input type="text" class="form-control" placeholder="¿encontro lo que buscaba ">
+            <span class="input-group-btn">
+                <button  class="btn Btn-adsi" type="button">Buscar</button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container hidden-sm hidden-md hidden-lg">
+      <div class="row">
+        <div class="col-xs-12 FormSearch">
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control "placeholder="¿encontro lo que buscaba ">
+              <span class="input-group-btn ">
+                <button  class="btn Btn-adsi" type="button">
+                  <span class="hidden-sm hidden-xs">Buscar</span>
+                  <i class="fa fa-search IconSearch visible-xs visible-sm"></i>
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- /menu-->
